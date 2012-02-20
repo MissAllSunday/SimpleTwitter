@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE package-info SYSTEM "http://www.simplemachines.org/xml/package-info">
+<package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
+	<id>Suki:Simple_Twitter</id>
+	<name>Simple Twitter</name>
+	<version>1.2</version>
+	<type>modification</type>
+
+	<install for="2.0 - 2.0.99">
+		<readme parsebbc="true">readme.txt</readme>
+		<modification type="file">install.xml</modification>
+		<database>install.php</database>
+		<require-file name="SimpleTwitter.php" destination="$sourcedir">The file that handles everything</require-file>
+		<require-dir name="languages" destination="$themedir">The folder with the translations</require-dir>
+		<require-dir name="twitteroauth" destination="$sourcedir">The folder with the API for twitter</require-dir>
+		<redirect url="$scripturl?action=admin;area=simpletwitter;" timeout="3000">redirect.txt</redirect>
+	</install>
+
+	<uninstall for="2.0 - 2.0.99">
+		<database>install.php</database>
+		<modification type="file" reverse="true">install.xml</modification>
+		<remove-file name="$sourcedir/SimpleTwitter.php" />
+		<remove-dir name="$sourcedir/twitteroauth" />
+		<remove-file name="$languagedir/SimpleTwitter.english.php" />
+		<remove-file name="$languagedir/SimpleTwitter.english-utf8.php" />
+		<remove-file name="$languagedir/SimpleTwitter.latin.php" />
+		<remove-file name="$languagedir/SimpleTwitter.es-utf8.php" />
+		<remove-file name="$languagedir/SimpleTwitter.es.php" />
+		<remove-file name="$languagedir/SimpleTwitter.latin-utf8.php" />
+	</uninstall>
+
+</package-info>
