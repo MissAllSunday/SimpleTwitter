@@ -18,9 +18,9 @@ This mod uses TwitterOAuth PHP Library  by Abraham Williams (abraham[at]abrah.am
 
 [b]This mod needs PHP 5.2+ and cURL Library[/b]
 
-This mod allow you to publish new topics to your twitter account automatically, all the topics made by users who have an active account will be automatically published on your twitter account.
+This mod allows you to publish new topics to your twitter account automatically, all the topics made by users who have an active account will be automatically published on your twitter account.
 
-the message will be as follows:
+The message will be as follows:
 
 topic name url
 url will be normal url or if enable, bit.ly url
@@ -31,7 +31,7 @@ url will be normal url or if enable, bit.ly url
 -You can use the bit.ly API  to short your urls
 -works with every theme, this mod des not modify any file at all! ;)
 
-	you will have to create a twitter app, [b]without the twitter app, this mod will not work.[/b]
+You will have to create a twitter app, [b]without the twitter app, this mod will not work.[/b]
 
 
 [size=12pt][color=purple]Laguage[/color][/size]
